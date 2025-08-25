@@ -1,0 +1,5 @@
+skin_tone_colors = {
+    "fair": ["#FFB6C1", "#ADD8E6", "#E6E6FA", "#98FF98"],  # pastel pink, light blue, lavender, mint green
+    "Medium": ["#50C878", "#9B111E", "#0047AB", "#FFDB58"],  # emerald, ruby, cobalt, mustard
+    "Dark": ["#FFA500", "#FF0000", "#40E0D0", "#FFFFFF", "#FFFF00"]  # orange, red, turquoise, white, yellow
+}
