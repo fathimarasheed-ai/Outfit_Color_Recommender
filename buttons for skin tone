@@ -1,0 +1,19 @@
+root = tk.Tk()
+root.title("Skin Tone Color Recommender")
+root.geometry("300x400")
+
+# Instruction
+instruction = tk.Label(root, text="Select your skin tone:", font=("Arial", 14))
+instruction.pack(pady=10)
+
+# Buttons for skin tones
+for tone in skin_tone_colors:
+    btn = tk.Button(root, text=tone, width=15, command=lambda t=tone: show_colors(t))
+    btn.pack(pady=5)
+
+# Frame to display colors
+color_frame = tk.Frame(root)
+color_frame.pack(pady=20)
+
+# Run the app
+root.mainloop()
