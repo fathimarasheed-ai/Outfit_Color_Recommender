@@ -1,0 +1,11 @@
+def show_colors(skin_tone):
+    colors = skin_tone_colors[skin_tone]
+
+    # Clear previous colors
+    for widget in color_frame.winfo_children():
+        widget.destroy()
+
+    # Show each color as a colored rectangle
+    for color in colors:
+        color_label = tk.Label(color_frame, bg=color, width=20, height=2)
+        color_label.pack(pady=5)
